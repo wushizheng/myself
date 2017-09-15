@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="bookstoreApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>bookstore</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-resource.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="js/bookstoreServices.js"></script>
+    <script src="js/bookstoreFilters.js"></script>
+    <script src="js/bookstoreRoutes.js"></script>
+    <script src="js/bookstoreControllers.js"></script>
+    <script src="js/bookstoreApps.js"></script>
+</head>
+<body class="container">
+
+    <div ng-include="'_partial_header.html'"></div>
+    
+    <div ng-view></div>
+
+</body>
+</html>

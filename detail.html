@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span>Book Detail</span>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <img ng-src="images/{{cover}}.jpg" class="img-responsive img-rounded" alt="{{book.title}}">
+            </div>
+            <div class="col-sm-6">
+                <dl class="dl-horizontal">
+                    <dt>Title</dt>
+                    <dd>{{book.title}}</dd>
+                    <dt>Author</dt>
+                    <dd>{{book.author}}</dd>
+                    <dt>Price</dt>
+                    <dd>{{book.price}}</dd>
+                    <dt>PubDate</dt>
+                    <dd>{{book.pubdate}}</dd>
+                </dl>
+                <div class="row">
+                    <div class="col-sm-3" ng-repeat="img in book.images">
+                        <img ng-click="setCover(img)" ng-src="images/{{img}}.jpg" class="img-responsive img-circle" alt="{{img}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a href="javascript:history.back()">Back</a>
+    </div>
+</div>
